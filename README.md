@@ -2,7 +2,7 @@
 
 Solo project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Node NBO** in Nairobi, **24 to 31 October 2026**.
 
-**AI Yako** (Swahili for *"Your AI"*) is a one-week hackathon about building useful applications on **QVAC**, Tether's local AI stack. The AI runs on hardware you control, not in someone else's data center.
+**AI Yako** (Swahili for _"Your AI"_) is a one-week hackathon about building useful applications on **QVAC**, Tether's local AI stack. The AI runs on hardware you control, not in someone else's data center.
 
 - **Hackathon page and submission portal:** https://dorahacks.io/hackathon/ai-yako/detail
 - **Full researched details.** See [`docs/1.all-info.md`](docs/1.all-info.md)
@@ -11,12 +11,12 @@ Solo project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Nod
 
 ## Project
 
-| Field | Value |
-|---|---|
-| Project name | **Yako** |
-| Track | **Track 1, Offline AI apps** |
-| Participant | **Solo** (one builder) |
-| Demo device | **Apple Silicon Mac** (arm64, 16 GB RAM, macOS 27). Android documented as the deployment target |
+| Field          | Value                                                                                                                                                                |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Project name   | **Yako**                                                                                                                                                             |
+| Track          | **Track 1, Offline AI apps**                                                                                                                                         |
+| Participant    | **Solo** (one builder)                                                                                                                                               |
+| Demo device    | **Apple Silicon Mac** (arm64, 16 GB RAM, macOS 27). Android documented as the deployment target                                                                      |
 | One-line pitch | **Yako is a translator that lives entirely on your device. It hears English and Swahili, translates between them, and speaks back, with the internet switched off.** |
 
 ## Hackathon Quick Facts

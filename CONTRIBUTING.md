@@ -14,14 +14,14 @@ This repo is a solo entry for **AI Yako, Own Your AI, the QVAC Hackathon** (24 t
 
 This was the original one-week plan. The live, current plan is the compressed sprint in `docs/5.build.md` (the final-part build schedule), which supersedes the dates below.
 
-| Day | Focus |
-|---|---|
-| Sat 24 Oct | Kickoff. Lock the track, scope the MVP, set up the repo and dev environments |
-| Sun 25 to Tue 27 Oct | Build the core feature on QVAC. Daily check-ins, office hours with Victor at 15:00 EAT on Discord |
-| **Wed 28 Oct** | **Mid-week progress and offline testing check.** Demo the core flow offline on a real device |
-| Thu 29 Oct | Feature freeze. Polish UX, write docs, start the demo-video script |
-| **Fri 30 Oct** | Record the offline demo video, final README pass, **submit on DoraHacks before 17:00 EAT (14:00 UTC)**. Upload early and verify every link |
-| Sat 31 Oct | Demo day at Node NBO (or remote demo coordination via Discord) |
+| Day                  | Focus                                                                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Sat 24 Oct           | Kickoff. Lock the track, scope the MVP, set up the repo and dev environments                                                               |
+| Sun 25 to Tue 27 Oct | Build the core feature on QVAC. Daily check-ins, office hours with Victor at 15:00 EAT on Discord                                          |
+| **Wed 28 Oct**       | **Mid-week progress and offline testing check.** Demo the core flow offline on a real device                                               |
+| Thu 29 Oct           | Feature freeze. Polish UX, write docs, start the demo-video script                                                                         |
+| **Fri 30 Oct**       | Record the offline demo video, final README pass, **submit on DoraHacks before 17:00 EAT (14:00 UTC)**. Upload early and verify every link |
+| Sat 31 Oct           | Demo day at Node NBO (or remote demo coordination via Discord)                                                                             |
 
 ## Git Workflow
 

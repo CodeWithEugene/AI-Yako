@@ -1,0 +1,39 @@
+/**
+ * All user-facing strings, externalized so the shell can be localized without
+ * touching code. English is the source of truth. A Swahili UI can be added by
+ * providing a parallel object and a one-line selector.
+ */
+window.YAKO_STRINGS = {
+  appName: 'Yako',
+  tagline: 'Offline English and Swahili translator',
+  offlineBadge: 'Offline',
+  sourceLabel: 'From',
+  targetLabel: 'To',
+  micIdle: 'Press and hold to speak',
+  micListening: 'Listening. Release to translate.',
+  micProcessing: 'Translating…',
+  micSpeaking: 'Speaking…',
+  typePlaceholder: 'or type here…',
+  translateButton: 'Translate',
+  swapLabel: 'Swap languages',
+  speakLabel: 'Play translation',
+  emptyTitle: 'Say something',
+  emptyHint: 'Press the mic and speak, or type below.',
+  statusReady: 'Ready. Everything runs on this device.',
+  statusListening: 'Listening…',
+  statusTranscribing: 'Hearing you…',
+  statusTranslating: 'Translating…',
+  statusSpeaking: 'Speaking…',
+  errorTitle: 'Something went wrong',
+  youSaid: 'You said',
+  translation: 'Translation',
+  aboutTitle: 'About',
+  closeLabel: 'Close',
+  metricsTitle: 'Performance on this device',
+  coldStart: 'Cold start',
+  speechToText: 'Speech to text',
+  textToSpeech: 'Text to speech',
+  peakMemory: 'Peak memory',
+  modelsTitle: 'On-device models',
+  offlineNote: 'No internet needed after setup. Your voice never leaves this device.',
+};
