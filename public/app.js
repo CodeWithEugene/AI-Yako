@@ -55,6 +55,18 @@
     chunks: [],
     lastAudio: null, // { base64, sampleRate }
     audioEl: null,
+    // speakMode controls text-to-speech. 'auto' speaks every translation aloud
+    // (the default). 'manual' stores the audio and reveals the speak button so a
+    // person can press it. Chosen with the ?speak= query parameter.
+    speakMode: (function () {
+      try {
+        return new URLSearchParams(window.location.search).get('speak') === 'manual'
+          ? 'manual'
+          : 'auto';
+      } catch {
+        return 'auto';
+      }
+    })(),
   };
 
   /* Apply externalized strings to the static shell. */
@@ -201,6 +213,11 @@
     showResult(r.sourceText, r.translatedText, !!r.audioWavBase64);
     if (r.audioWavBase64) {
       state.lastAudio = { base64: r.audioWavBase64, sampleRate: r.audioSampleRate };
+      if (state.speakMode === 'manual') {
+        setPhase('idle');
+        setStatus(S.statusReady);
+        return Promise.resolve();
+      }
       return playTranslation(r.audioWavBase64);
     }
     setPhase('idle');

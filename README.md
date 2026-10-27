@@ -19,6 +19,12 @@ Solo project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Nod
 | Demo device    | **Apple Silicon Mac** (arm64, 16 GB RAM, macOS 27). Android documented as the deployment target                                                                      |
 | One-line pitch | **Yako is a translator that lives entirely on your device. It hears English and Swahili, translates between them, and speaks back, with the internet switched off.** |
 
+## Demo Video
+
+**Watch the offline demo.** [demo/Yako-Demo-Final.mp4](demo/Yako-Demo-Final.mp4)
+
+One continuous take. The header badge flips from Online to Offline, and Yako keeps translating and speaking between English and Swahili with the network off. Narration, captions, and music are produced locally with OpenMontage.
+
 ## Hackathon Quick Facts
 
 - **Dates.** Build from 24 to 30 Oct 2026. Submission deadline **Fri 30 Oct, 17:00 EAT (14:00 UTC)**. Demo day Sat 31 Oct at Node NBO, and remote entries are fully eligible.
@@ -87,6 +93,7 @@ The core translation, transcription, and speech features use **no network** and 
 ```
 .
 ├── README.md               you are here
+├── demo/                   offline demo video (Yako-Demo-Final.mp4)
 ├── CONTRIBUTING.md         build-week workflow and conventions
 ├── CODE-OF-CONDUCT.md      community standards
 ├── SECURITY.md             vulnerability reporting and secrets policy
@@ -103,7 +110,7 @@ The core translation, transcription, and speech features use **no network** and 
 
 - [ ] Repo is public and shows QVAC powering the core feature (no cloud AI APIs)
 - [ ] README documents setup, usage, QVAC integration, and demo steps
-- [ ] Offline demo video recorded (device in airplane or offline mode, in one continuous take)
+- [x] Offline demo video recorded (device in airplane or offline mode, in one continuous take)
 - [ ] Test device, OS, and memory listed
 - [ ] Features that use the network (and why) listed
 - [ ] Pre-existing and third-party code disclosed and credited
