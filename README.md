@@ -23,6 +23,8 @@ Solo project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Nod
 
 **Watch the offline demo.** [demo/Yako-Demo-Final.mp4](demo/Yako-Demo-Final.mp4)
 
+**Hosted web interface.** [yako.codewitheugene.top](https://yako.codewitheugene.top) hosts the static frontend as a live showcase. The translation AI still runs entirely on your device, so the hosted page explains the offline architecture and links back here. To drive it live, run the app locally and open the hosted page with `?api=<your-local-url>` so the browser talks to the on-device server.
+
 One continuous take. The header badge flips from Online to Offline, and Yako keeps translating and speaking between English and Swahili with the network off. Narration, captions, and music are produced locally with OpenMontage.
 
 ## Hackathon Quick Facts
