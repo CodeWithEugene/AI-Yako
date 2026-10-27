@@ -13,10 +13,11 @@ Solo project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Nod
 
 | Field | Value |
 |---|---|
-| Project name | **TBD** |
-| Track | **TBD**. Offline AI apps, Cloud to Pocket migration, or Offline-first finance |
+| Project name | **Yako** |
+| Track | **Track 1, Offline AI apps** |
 | Participant | **Solo** (one builder) |
-| One-line pitch | **TBD** |
+| Demo device | **Apple Silicon Mac** (arm64, 16 GB RAM, macOS 27). Android documented as the deployment target |
+| One-line pitch | **Yako is a translator that lives entirely on your device. It hears English and Swahili, translates between them, and speaks back, with the internet switched off.** |
 
 ## Hackathon Quick Facts
 
