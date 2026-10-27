@@ -1,6 +1,6 @@
 # AI Yako. Own Your AI
 
-Team project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Node NBO** in Nairobi, **24 to 31 October 2026**.
+Solo project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Node NBO** in Nairobi, **24 to 31 October 2026**.
 
 **AI Yako** (Swahili for *"Your AI"*) is a one-week hackathon about building useful applications on **QVAC**, Tether's local AI stack. The AI runs on hardware you control, not in someone else's data center.
 
@@ -15,7 +15,7 @@ Team project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Nod
 |---|---|
 | Project name | **TBD** |
 | Track | **TBD**. Offline AI apps, Cloud to Pocket migration, or Offline-first finance |
-| Team members | **TBD** (solo or up to 3 people) |
+| Participant | **Solo** (one builder) |
 | One-line pitch | **TBD** |
 
 ## Hackathon Quick Facts
@@ -32,7 +32,7 @@ Team project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Nod
 ```
 .
 ├── README.md               you are here
-├── CONTRIBUTING.md         team workflow during build week
+├── CONTRIBUTING.md         build-week workflow and conventions
 ├── CODE-OF-CONDUCT.md      community standards
 ├── SECURITY.md             vulnerability reporting and secrets policy
 ├── LICENSE

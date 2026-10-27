@@ -1,10 +1,10 @@
 # Contributing
 
-This repo is a team entry for **AI Yako, Own Your AI, the QVAC Hackathon** (24 to 31 Oct 2026). It's a one-week sprint, so the workflow is lightweight and optimized for shipping a working, well-documented build before the deadline.
+This repo is a solo entry for **AI Yako, Own Your AI, the QVAC Hackathon** (24 to 31 Oct 2026). It's a one-week sprint, so the workflow is lightweight and optimized for shipping a working, well-documented build before the deadline.
 
 ## Ground Rules
 
-- **One Build per team.** We submit exactly one project on DoraHacks, and all team members (max 3) get added to that Build.
+- **One Build.** I submit exactly one project on DoraHacks as a solo builder.
 - **Main is always demo-able.** `main` must stay in a state we could record the offline demo from at any time. Merge early, merge small.
 - **QVAC is mandatory.** The core feature must run on QVAC (`@qvac/sdk`) on a physical device. No cloud AI APIs for the core feature, since that disqualifies the entry. WDK is required if we're in the finance track.
 - **Disclose reused work.** Any pre-existing code, boilerplate, or third-party asset must be credited in the README and in `docs/`. The hackathon requires it.
@@ -24,7 +24,7 @@ This repo is a team entry for **AI Yako, Own Your AI, the QVAC Hackathon** (24 t
 ## Git Workflow
 
 - Branch per piece of work, like `feat/<thing>`, `fix/<thing>`, `docs/<thing>`.
-- Keep PRs small. One reviewer (any teammate) is enough during the sprint.
+- Keep commits small and self-reviewed. There is no second reviewer on a solo entry, so read each diff before committing.
 - Commit messages should be imperative and specific (e.g. `Add QVAC translate pipeline for Swahili FAQ`).
 - Rebase or merge. Either is fine, but don't force-push shared branches.
 
@@ -38,5 +38,5 @@ This repo is a team entry for **AI Yako, Own Your AI, the QVAC Hackathon** (24 t
 ## Definition of Done (per feature)
 
 - Works **offline on a physical device** (airplane-mode test, not just localhost).
-- Setup steps reproducible by a teammate from the README alone.
+- Setup steps reproducible from the README alone, so future-me and any judge can run it cold.
 - Any network-using behavior is noted, since we must list every feature that uses the network in the submission.
