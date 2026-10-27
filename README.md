@@ -22,7 +22,7 @@ Solo project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Nod
 ## Hackathon Quick Facts
 
 - **Dates.** Build from 24 to 30 Oct 2026. Submission deadline **Fri 30 Oct, 17:00 EAT (14:00 UTC)**. Demo day Sat 31 Oct at Node NBO, and remote entries are fully eligible.
-- **Prize pool.** 3,500 USDt split across Overall best (1,500), Cloud to Pocket (900), Offline AI (700), and Offline-first finance (400).
+- **Prize pool.** 3,500 USDt split across Overall best (1,500), Cloud to Pocket (900), Offline AI apps (700), and On-device agentic finance (400).
 - **Mandatory tech.** **QVAC** must power the core feature (`npm install @qvac/sdk`, Node.js 22.17 or newer, and it runs on a **physical device only**, no emulator). **WDK** (`@tetherto/wdk`) is required for the finance track. **Pears** is welcome for device-to-device features.
 - **Disqualifier.** Using a cloud AI API for the core feature. AI processing must run locally.
 - **Judging.** Real user value, meaningful QVAC integration, working implementation, usability, and clarity and reproducibility of the offline demo.

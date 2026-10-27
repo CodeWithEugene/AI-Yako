@@ -1,0 +1,29 @@
+Yako
+Copyright 2026 Eugene
+
+This project is built on and credits the following third-party work.
+
+QVAC
+  Tether's local-first AI SDK and runtime.
+  Apache License 2.0.
+  https://qvac.tether.io/ and https://docs.qvac.tether.io/
+
+TranslatePsy-AfriSLM
+  On-device translation model family from Tether AI Research.
+  Model weights are Apache License 2.0.
+  https://huggingface.co/qvac and https://github.com/tether-ai-research/qvac-translatepsy-afri-slm
+
+whisper.cpp
+  On-device speech recognition used for transcription.
+  MIT License.
+  https://github.com/ggerganov/whisper.cpp
+
+Whisper
+  Original speech model from OpenAI.
+  MIT License.
+  https://github.com/openai/whisper
+
+This project also draws on public research cited in docs/2.problem.md and
+docs/3.research.md (DataReportal, Communications Authority of Kenya, GSMA,
+Access Partnership, UNESCO, Stanford HAI, SIL Global, and Google DeepMind
+Gemmaverse).

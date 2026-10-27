@@ -12,6 +12,8 @@ This repo is a solo entry for **AI Yako, Own Your AI, the QVAC Hackathon** (24 t
 
 ## Build-Week Cadence (EAT, UTC+3)
 
+This was the original one-week plan. The live, current plan is the compressed sprint in `docs/5.build.md` (the final-part build schedule), which supersedes the dates below.
+
 | Day | Focus |
 |---|---|
 | Sat 24 Oct | Kickoff. Lock the track, scope the MVP, set up the repo and dev environments |

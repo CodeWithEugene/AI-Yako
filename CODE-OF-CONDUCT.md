@@ -28,7 +28,7 @@ This Code of Conduct applies within all project spaces (this repo, issues, PRs) 
 
 ## Enforcement
 
-- Report incidents to the project team lead (**TBD**, add contact) or directly to the AI Yako organizers via the hackathon Discord or the [DoraHacks hackathon page](https://dorahacks.io/hackathon/ai-yako/detail).
+- Report incidents to the maintainer, Eugene, via the hackathon Discord, or directly to the AI Yako organizers via the [DoraHacks hackathon page](https://dorahacks.io/hackathon/ai-yako/detail).
 - All complaints will be reviewed promptly and fairly, and reporters' confidentiality will be respected.
 - Maintainers may remove, edit, or reject contributions that violate this Code, and may temporarily or permanently ban any contributor for behavior they deem inappropriate, threatening, or harmful.
 

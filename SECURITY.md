@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-If you find a security issue in this project, please **do not open a public issue**. Report it privately to the team lead (**TBD**, add contact) with a description, reproduction steps, and affected versions or commits. We'll acknowledge within 48 hours and coordinate a fix before any public disclosure.
+If you find a security issue in this project, please **do not open a public issue**. Report it privately to the maintainer, Eugene, via the AI Yako hackathon Discord or the contact link on the [DoraHacks project page](https://dorahacks.io/hackathon/ai-yako/detail), with a description, reproduction steps, and affected versions or commits. I'll acknowledge within 48 hours and coordinate a fix before any public disclosure.
 
 ## Secrets and Sensitive Data (Hackathon Rule)
 
