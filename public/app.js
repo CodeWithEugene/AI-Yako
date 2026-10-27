@@ -82,6 +82,16 @@
     els.statusLine.textContent = text;
   }
 
+  /* Reflect the device connectivity in the header badge. The app keeps
+     working offline. The badge is honest proof that translation does not
+     depend on a network. */
+  function updateConnectivity() {
+    var online = navigator.onLine !== false;
+    els.offlineText.textContent = online ? S.onlineBadge : S.offlineBadge;
+    var badge = document.getElementById('offlineBadge');
+    if (badge) badge.classList.toggle('badge-online', online);
+  }
+
   function setPhase(phase) {
     state.phase = phase;
     els.micButton.classList.remove('listening', 'processing', 'speaking');
@@ -450,4 +460,7 @@
   updateDirection();
   wire();
   setPhase('idle');
+  updateConnectivity();
+  window.addEventListener('online', updateConnectivity);
+  window.addEventListener('offline', updateConnectivity);
 })();

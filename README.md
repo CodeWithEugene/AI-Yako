@@ -28,6 +28,60 @@ Solo project for **AI Yako, Own Your AI, the QVAC Hackathon**, hosted with **Nod
 - **Judging.** Real user value, meaningful QVAC integration, working implementation, usability, and clarity and reproducibility of the offline demo.
 - **Submission is** a public repo, a **recorded offline demo video** (device visible in airplane or offline mode), QVAC integration notes, test device, OS and RAM, and a list of features that use the network. A Luma RSVP is **not** a submission. Submit on DoraHacks.
 
+## Setup
+
+Requirements. Node.js 22.17 or newer and npm. One-time internet access to download the models. After setup the app runs fully offline.
+
+```bash
+npm install
+npm run build
+npm run setup   # one-time, downloads 6 models (about 2.1 GB)
+npm start       # serves the app at http://localhost:4173
+```
+
+`npm run setup` downloads and verifies every model before it reports success. Open http://localhost:4173 in a browser, allow microphone access for the voice path, and switch the network off. The app keeps working.
+
+## Usage
+
+- **Text.** Type a sentence and press Translate (or Cmd/Ctrl + Enter). Yako shows the translation and can speak it aloud.
+- **Voice.** Press and hold the mic, speak, and release. Yako transcribes, translates, and speaks the reply in the other language.
+- **Swap.** The arrow button flips the direction between English and Swahili.
+- **Offline proof.** The header badge shows the device connectivity in real time and stays functional with the network off.
+
+## QVAC Integration
+
+Yako runs every stage of the pipeline on device through `@qvac/sdk`. No cloud AI API is used for any feature. Six models load into a single QVAC worker process and stay resident.
+
+| Stage           | Model                              | Size   | Role                                    |
+| --------------- | ---------------------------------- | ------ | --------------------------------------- |
+| Translation     | TranslatePsy AfriSLM 0.8B (Q4_K_M) | 672 MB | English to Swahili and back (llama.cpp) |
+| Speech to text  | Whisper tiny multilingual (Q8_0)   | 44 MB  | Transcribes spoken English and Swahili  |
+| Voice activity  | Silero VAD 5.1.2                   | 1 MB   | Detects speech boundaries in the mic    |
+| English voice   | Supertonic English TTS (Q8_0)      | 252 MB | Speaks the English translation          |
+| Swahili voice   | Chatterbox T3 multilingual (Q4_0)  | 345 MB | Speaks the Swahili translation          |
+| Swahili vocoder | Chatterbox S3GEN (Q4_0)            | 788 MB | Renders the Swahili waveform            |
+
+Total model store is about 2.1 GB. Translation runs through the QVAC llama.cpp completion backend with greedy decoding, transcription through the QVAC Whisper streaming session with Silero VAD, and speech through the QVAC GGML text to speech engines. All calls are serialized on one in-process lock because the completion backend runs one job at a time.
+
+## Performance on the Demo Device
+
+Measured on an Apple M4, 16 GB RAM, macOS 27, with models warm. Cold figures include the one-time model load on first use.
+
+| Operation                       | Warm               | Cold (first call) |
+| ------------------------------- | ------------------ | ----------------- |
+| App cold start to ready         | 2 to 4 ms          | 2 to 4 ms         |
+| Text translation (round trip)   | 130 to 315 ms      | about 2.8 s       |
+| Speech to text (short phrase)   | about 240 ms       | adds model load   |
+| English voice (Supertonic)      | 66 to 120 ms       | about 0.6 s       |
+| Swahili voice (Chatterbox)      | 5.3 to 7.9 s       | about 1.1 s load  |
+| Memory with all models resident | about 1.0 GB total |                   |
+
+The Swahili voice is the heaviest stage because Chatterbox is a larger two-model pipeline (T3 plus the S3GEN vocoder). Translation and English speech are fast enough to feel instant.
+
+## Network Usage
+
+The core translation, transcription, and speech features use **no network** and run entirely on device. The only network access in the project is the one-time `npm run setup` download of the model files. There are no analytics, no telemetry, and no external calls at runtime.
+
 ## Repository Layout
 
 ```

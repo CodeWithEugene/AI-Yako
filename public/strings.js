@@ -7,6 +7,7 @@ window.YAKO_STRINGS = {
   appName: 'Yako',
   tagline: 'Offline English and Swahili translator',
   offlineBadge: 'Offline',
+  onlineBadge: 'Online',
   sourceLabel: 'From',
   targetLabel: 'To',
   micIdle: 'Press and hold to speak',

@@ -99,6 +99,24 @@ body {
   font-size: 13px;
   font-weight: 600;
   border: 1px solid var(--border);
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.badge.badge-online {
+  background: #e7f6ec;
+  color: #18794e;
+  border-color: #2f9e6e;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge.badge-online {
+    background: #12291d;
+    color: #4cc38a;
+    border-color: #2f9e6e;
+  }
 }
 .badge-icon {
   width: 16px;
